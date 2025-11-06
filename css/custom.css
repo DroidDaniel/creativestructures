@@ -18,7 +18,11 @@
 .navbar-custom .navbar-brand .logo,
 .navbar-custom.top-nav-collapse .navbar-brand .logodark{
     max-height: 120px;
-    background: #fff;
+}
+
+.navbar-custom.top-nav-collapse .navbar-brand .logodark{
+    background-color: #fff;
+    padding: 10px;
 }
 
 .navbar-fixed-top .navbar-collapse{
