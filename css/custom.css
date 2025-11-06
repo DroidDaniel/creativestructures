@@ -20,3 +20,7 @@
     max-height: 120px;
     background: #fff;
 }
+
+.navbar-fixed-top .navbar-collapse{
+    position: relative;
+}
