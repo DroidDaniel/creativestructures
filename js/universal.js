@@ -50,10 +50,14 @@
                 var homeSHeight = introHeader.height();
                 var topScroll = $(document).scrollTop();
                 if ((introHeader.hasClass('intro')) && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-                    introHeader.css('top', (topScroll * .4));
+                    if (introHeader.offset()) {
+                        introHeader.css('top', (topScroll * .4));
+                    }
                 }
                 if (introHeader.hasClass('intro') && ($(scrollTopp).scrollTop() <= homeSHeight)) {
-                    introHeader.css('opacity', (1 - topScroll/introHeader.height() * 1));
+                    if (introHeader.offset()) {
+                        introHeader.css('opacity', (1 - topScroll/introHeader.height() * 1));
+                    }
                 }
             }
         };
